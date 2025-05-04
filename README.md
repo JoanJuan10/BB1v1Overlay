@@ -13,7 +13,9 @@ npm install
 
 ## Ejecución
 
-Para iniciar el servidor estático y servir la aplicación:
+1. Para iniciar el servidor estático y servir la aplicación:
+2. Instala y ejecuta BlueBottle (League Broadcast - https://bluebottle.gg)
+3. Con Bluebottle abierto, en la carpeta del proyecto, ejecuta:
 
 ```bash
 npm start
