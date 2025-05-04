@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="bbOverlayApp">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BB Overlay</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.min.js"></script>
+  <script src="js/app.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body ng-controller="MainController" style="background: transparent; margin:0;">
+    <div data-v-app="" class="style-1">
+        <div data-v-389ac56a="" class="style-2">
+            <div data-v-1ed84517="" data-v-389ac56a="" class="style-14">
+                <!---->
+            </div>
+            <div data-v-ea35e1d1="" data-v-389ac56a="" class="style-15" show="[object Object]">
+                <div data-v-ea35e1d1="" class="style-16"> NOTIFICATION </div>
+                <div data-v-ea35e1d1="" class="style-17">
+                    <div data-v-ea35e1d1="" class="style-18">
+                        <div data-v-d36cb052="" data-v-ea35e1d1="" class="style-19">
+                            <div data-v-d36cb052="" class="style-20">
+                                <div data-v-d36cb052="" class="style-21">
+                                    <div class="style-22" ng-class="{'explode': blueexploded}"><img class="style-23" src="http://localhost:58869/cache/style/ingame/scoreboard/tower.png" /></div>
+                                </div>
+                            </div>
+                            <div data-v-d36cb052="" class="style-26">
+                                <div data-v-d36cb052="" class="style-27">
+                                    <div class="style-28"><img class="style-29" src="img/minion.png" /></div>
+                                    <div class="style-30">
+                                        <p class="style-31" ng-class="{'minionWin': minionsBlue}">{{100 - data.scoreboardBottom.teams[0].players[0].creepScore}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-v-d36cb052="" class="style-33">
+                                <!-- replaced numeric indicator with two toggleable squares -->
+                                <div class="style-34 life-squares">
+                                  <span class="square life2" ng-class="{'filled': bluelife2remain}"></span>
+                                  <span class="square life1" ng-class="{'filled': bluelife1remain}"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <!---->
+                        <div data-v-f669c466="" data-v-ea35e1d1="" class="style-35" teaminfostyle="[object Object]">
+                            <div data-v-f669c466="" class="style-38">
+                                <progress data-v-f669c466="" class="style-39 player-progress-blue" value="{{data.tabs[0].players[0].health.current}}" max="{{data.tabs[0].players[0].health.max}}"></progress>
+                                <!---->
+                            </div>
+                        </div>
+                        <div data-v-f669c466="" data-v-ea35e1d1="" class="style-35" teaminfostyle="[object Object]">
+                            <div data-v-f669c466="" class="style-38">
+                                <p data-v-f669c466="" class="style-39">{{blueName[0] ? blueName[1] : data.tabs[0].players[0].playerName}}</p>
+                                <!---->
+                            </div>
+                        </div>
+                    </div>
+                    <div data-v-ea35e1d1="" class="style-40"><img data-v-ea35e1d1="" src="http://localhost:58869/cache/style/mainIcon.png" class="style-41" /></div>
+                    <div data-v-ea35e1d1="" class="style-42">
+                        <div data-v-d36cb052="" data-v-ea35e1d1="" class="style-43">
+                            <div data-v-d36cb052="" class="style-44 life-squares">
+                              <span class="square life2" ng-class="{'filled': redlife2remain}"></span>
+                              <span class="square life1" ng-class="{'filled': redlife1remain}"></span>
+                            </div>
+                            <div data-v-d36cb052="" class="style-46">
+                                <div data-v-d36cb052="" class="style-47">
+                                    <div class="style-48"><img class="style-49" src="img/minion.png" /></div>
+                                    <div class="style-50">
+                                        <p class="style-51" ng-class="{'minionWin': minionsRed}">{{100 - data.scoreboardBottom.teams[1].players[0].creepScore}}</p>
+                                    </div>
+                                </div>
+                                <!---->
+                            </div>
+                            <div data-v-d36cb052="" class="style-52">
+                                <div data-v-d36cb052="" class="style-53">
+                                    <div class="style-54" ng-class="{'explode': redexploded}"><img class="style-55" src="http://localhost:58869/cache/style/ingame/scoreboard/tower.png" /></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <!---->
+                        <div data-v-f669c466="" data-v-ea35e1d1="" class="style-58" teaminfostyle="[object Object]">
+                            <div data-v-f669c466="" class="style-61">
+                                <progress data-v-f669c466="" class="style-62 player-progress-red" value="{{data.tabs[1].players[0].health.current}}" max="{{data.tabs[1].players[0].health.max}}"></progress>
+                                <!---->
+                            </div>
+                        </div>
+                        <div data-v-f669c466="" data-v-ea35e1d1="" class="style-58" teaminfostyle="[object Object]">
+                            <div data-v-f669c466="" class="style-61">
+                                <p data-v-f669c466="" class="style-62">{{redName[0] ? redName[1] : data.tabs[1].players[0].playerName}}</p>
+                                <!---->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-v-ea35e1d1="" class="style-63">
+                    <div data-v-ea35e1d1="" class="style-64">
+                    </div>
+                    <div data-v-ea35e1d1="" class="style-102">
+                        <p class="style-103">{{minutos}}:{{segundos}}</p>
+                    </div>
+                    <div data-v-ea35e1d1="" class="style-104">
+                        <div data-v-ea35e1d1="" class="style-105"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
